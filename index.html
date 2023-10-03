@@ -323,17 +323,21 @@
           />
         </svg>
 
-        <div class="text-area">
-          <div class="container-basic">
-            <div class="container2"></div>
-          </div>
-          <div class="input-text">Write your message here...</div>
-        </div>
-        <div class="text-field-activated">
-          <div class="container-basic2">
-            <div class="container2"></div>
-          </div>
-          <div class="input-text2">Lorem Ipsum</div>
+        <div class=" z-9 flex-col gap-3 w-full justify-center items-center p-3  " >
+          <header class="form-header w-full text-center " >
+            Contact me
+          </header>
+          <p class=" form-text text-center w-full " >
+            If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I'd love to have with it.
+          </p>
+
+          <form class=" contact-form gap-form  justify-start items-start flex-col  " action="submit">
+            <input required  type="text" placeholder="Enter your name here" name="name" id="name">
+            <input required  type="email" placeholder="Enter your email here" name="name" id="name">
+            <textarea  class="con-textArea" placeholder="Write your message here . . ." id="" cols="30" rows="5"></textarea>
+            <button class=" con-btn " >Submit</button>
+          </form>
+
         </div>
         <div class="contact-form-shapes-mobile">
           <div class="rectangle-42"></div>
@@ -573,24 +577,8 @@
             </div>
           </div>
         </div>
-        <div class="primary-text8">Contact me</div>
-        <div class="primary-text9">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. <br />I’d love to
-          help with it!
-        </div>
-        <div class="text-field-activated2">
-          <div class="container-basic2">
-            <div class="container2"></div>
-          </div>
-          <div class="input-text2">loremipsum@gmail.com</div>
-        </div>
-        <div class="home-indicator-light">
-          <div class="shape"></div>
-        </div>
-        <div class="normal-button-primary-enabled">
-          <div class="get-in-touch">Get in touch</div>
-        </div>
+
+        
       </div>
     </div>
 
@@ -624,37 +612,22 @@
           />
         </svg>
 
-        <footer class="left-block">
-          <div class="text">
-            <div class="primary-text">Contact me</div>
-            <div class="primary-text2">
-              If you have an application you are interested in developing, a
-              feature that you need built or a project that needs coding. I’d
-              love to help with it!
-            </div>
-            <div class="form">
-              <div class="text-field-activated">
-                <div class="container-basic">
-                  <div class="container"></div>
-                </div>
-                <div class="input-text">Lorem Ipsum</div>
-              </div>
-              <div class="text-field-activated">
-                <div class="container-basic">
-                  <div class="container"></div>
-                </div>
-                <div class="input-text">loremipsum@gmail.com</div>
-              </div>
-              <div class="text-area">
-                <div class="container-basic2">
-                  <div class="container"></div>
-                </div>
-                <textarea placeholder='Write your message here...' class="input-text2" rows="1" cols="10"></textarea> 
-              </div>
-              <div class="normal-button-primary-enabled cursor-pointer">
-                <div class="get-in-touch cursor-pointer">Get in touch</div>
-              </div>
-            </div>
+        <footer class="left-block flex justify-center item-center w-full ">
+          <div class=" flex-col gap-3 w-50 justify-center items-center p-3  " >
+            <header class="form-header w-full text-center " >
+              Contact me
+            </header>
+            <p class=" form-text text-center w-full " >
+              If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I'd love to have with it.
+            </p>
+
+            <form class=" contact-form gap-form  justify-center items-center flex-col  " action="submit">
+              <input required  type="text" placeholder="Enter your name here" name="name" id="name">
+              <input required  type="email" placeholder="Enter your email here" name="name" id="name">
+              <textarea  class="con-textArea" placeholder="Write your message here . . ." id="" cols="50" rows="10"></textarea>
+              <button class=" con-btn " >Submit</button>
+            </form>
+
           </div>
         </footer>
         <div class="left-block2">
@@ -668,7 +641,7 @@
             </div>
             <div class="social-media">
               <div class="supporting-text">
-                <div class="let-s-connect">LET’S CONNECT</div>
+                <button type="button" class="let-s-connect">LET’S CONNECT</button>
               </div>
               <div class="frame-1">
                 <div class="normal-button-tertiary-disabled">
