@@ -79,7 +79,6 @@ html {
     gap: 24px;
     width: 100%;
     position: absolute;
-    /* left: 320px; */
     top: 4421px;
     overflow: hidden;
     color: #fff;
@@ -164,7 +163,7 @@ html {
     display: flex;
     flex-direction: column;
   }
-  
+
   .justify-center {
     justify-content: center;
   }
@@ -1395,7 +1394,7 @@ html {
     display: flex;
     flex-direction: column;
   }
-  
+
   .justify-center {
     justify-content: center;
   }
