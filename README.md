@@ -1,12 +1,9 @@
 
-
 <a name="readme-top"></a>
 
 
 
 <div align="center">
-  
-  <br/>
 
   <h3><b>Hello-Microverse README Template</b></h3>
 
@@ -37,6 +34,8 @@
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
+
+
 
 # 📖 [Hello-Microverse-project] <a name="about-project"></a>
 
@@ -128,7 +127,7 @@ Example commands:
 
 ### Install
 
-Install this project with:
+Install this project with: git clone https://github.com/lizzy-km/Microverse-Project.git
 
 <!--
 Example command:
@@ -141,7 +140,7 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command: npm run dev
 
 <!--
 Example command:
@@ -181,10 +180,13 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
+> Mention all of the collaborators of this project.
 
 👤 **Kaung Myat Soe**
 
 - GitHub: [@githubhandle](https://github.com/lizzy-km)
+
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaung-myat-soe-b02038283/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,9 +224,6 @@ If you like this project just let me know that you like this
 
 I would like to thank my team.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
 
 
 
