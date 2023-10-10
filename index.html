@@ -19,18 +19,106 @@
   display: none;
 }
 
-html {
-  overflow-x: hidden;
+*{
+  pointer-events: fill;
 }
 
-.z-99 {
-  z-index: 99999999999;
+html {
+  overflow-x: hidden;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.my-logo {
+  animation-name: rotateM !important;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.z-99 {
+  z-index: 99999999999;
+}
+
+.logo-text:hover {
+  color: #022c56;
+  font-size: larger;
+  transition:all .3s ease-in-out !important;
+}
+
+.logo-text {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rotateM {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes rotateM {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes rotateM {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateM {
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Desktop  */
@@ -1229,7 +1317,7 @@ html {
     top: 0;
     overflow: hidden;
     background-color: #ffffff48;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px) saturate(0) invert(1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1463,7 +1551,7 @@ html {
     overflow: visible;
     width: 375px;
     height: 718px;
-    background-image: url('https://raw.githubusercontent.com/lizzy-km/portfolio-v/72245828da5cbe6375eb8e569fe437a4a9ad91dd/images/header-bg-m.svg');
+    background-image: url("https://raw.githubusercontent.com/lizzy-km/portfolio-v/72245828da5cbe6375eb8e569fe437a4a9ad91dd/images/header-bg-m.svg");
   }
 
   .header-shapes-mobile {
@@ -1473,7 +1561,7 @@ html {
     overflow: visible;
     width: 462px;
     height: 588px;
-    background-image: url('https://raw.githubusercontent.com/lizzy-km/portfolio-v/1055558a99cd8b0526288d679f7cf38d6799164e/images/header-shape-m.svg');
+    background-image: url("https://raw.githubusercontent.com/lizzy-km/portfolio-v/1055558a99cd8b0526288d679f7cf38d6799164e/images/header-shape-m.svg");
   }
 
   .headline {
@@ -1553,7 +1641,7 @@ html {
     width: 15px;
     height: 20px;
     overflow: visible;
-    background-image: url('https://raw.githubusercontent.com/lizzy-km/portfolio-v/172bdde5440f7124b2ee673638fdcfeb8799dd0b/images/vector.svg');
+    background-image: url("https://raw.githubusercontent.com/lizzy-km/portfolio-v/172bdde5440f7124b2ee673638fdcfeb8799dd0b/images/vector.svg");
   }
 
   .vector2 {
@@ -2791,22 +2879,20 @@ html {
     justify-content: center;
   }
 }
+
     </style>
   </head>
   <body>
     <div class="template-1-mobile-main">
       <div class="frame-14">
-      <div class="header-background-mobile">
-        
-      </div>
-       
-        <div class="header-shapes-mobile">
-          
-        </div>
-        
+        <div class="header-background-mobile"></div>
+
+        <div class="header-shapes-mobile"></div>
 
         <div class="headline">
-          <div class="primary-text">I’m Kaung Myat SOe.<br />Glad to see you!</div>
+          <div class="primary-text">
+            I’m Kaung Myat SOe.<br />Glad to see you!
+          </div>
           <div class="primary-text2">
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
@@ -2819,8 +2905,7 @@ html {
             </div>
           </div>
           <div class="social-media-icons">
-          <div class='vector' ></div>
-            
+            <div class="vector"></div>
 
             <svg
               class="vector2"
@@ -2890,7 +2975,10 @@ html {
       </div>
       <div class="works">
         <div class="card-works">
-          <img class="snapshoot-portfolio" src="/images/snapshoot-portfolio.png" />
+          <img
+            class="snapshoot-portfolio"
+            src="/images/snapshoot-portfolio.png"
+          />
           <div class="left-block">
             <div class="primary-text3">
               <div class="project-title">Tonic</div>
@@ -2931,7 +3019,10 @@ html {
           </div>
         </div>
         <div class="card-works2">
-          <img class="snapshoot-portfolio" src="/images/snapshoot-portfolio2.png" />
+          <img
+            class="snapshoot-portfolio"
+            src="/images/snapshoot-portfolio2.png"
+          />
           <div class="left-block">
             <div class="primary-text3">
               <div class="project-title2">Multi-Post<br />Stories</div>
@@ -2972,7 +3063,10 @@ html {
           </div>
         </div>
         <div class="card-works2">
-          <img class="snapshoot-portfolio" src="/images/Snapshoot Portfolio.png" />
+          <img
+            class="snapshoot-portfolio"
+            src="/images/Snapshoot Portfolio.png"
+          />
           <div class="left-block">
             <div class="primary-text3">
               <div class="project-title3">Tonic</div>
@@ -3013,7 +3107,10 @@ html {
           </div>
         </div>
         <div class="card-works2">
-          <img class="snapshoot-portfolio-1" src="/images/Snapshoot Portfolio1.png" />
+          <img
+            class="snapshoot-portfolio-1"
+            src="/images/Snapshoot Portfolio1.png"
+          />
           <div class="left-block">
             <div class="primary-text3">
               <div class="project-title2">Multi-Post<br />Stories</div>
@@ -3058,7 +3155,14 @@ html {
         <div class="toolbar-dark-compact">
           <div class="toolbar-container"></div>
           <div class="logo-placeholder">
-            <div class="my-logo">My Logo</div>
+            <div class="my-logo">
+              <div class="logo-text">M</div>
+              <pre class="logo-text">y </pre>
+              <div class="logo-text">L</div>
+              <div class="logo-text">o</div>
+              <div class="logo-text">g</div>
+              <div class="logo-text">o</div>
+            </div>
           </div>
           <div class="normal-button-tertiary-enabled">
             <svg
@@ -3079,7 +3183,7 @@ html {
           </div>
         </div>
       </div>
-      
+
       <div class="group-5">
         <svg
           class="base-about-my-self"
@@ -3109,21 +3213,41 @@ html {
           />
         </svg>
 
-        <div class=" z-9 flex-col gap-3 w-full justify-center items-center p-3  " >
-          <header class="form-header w-full text-center " >
-            Contact me
-          </header>
-          <p class=" form-text text-center w-full " >
-            If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I'd love to have with it.
+        <div class="z-9 flex-col gap-3 w-full justify-center items-center p-3">
+          <header class="form-header w-full text-center">Contact me</header>
+          <p class="form-text text-center w-full">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding, I'd love
+            to have with it.
           </p>
 
-          <form class=" contact-form z-99 gap-form  justify-start items-start flex-col  " action="https://formspree.io/f/mnqkoblj" method="POST">
-            <input required  maxlength="30" type="text" placeholder="Enter your name here" name="name" id="name">
-            <input required for="email" type="email" placeholder="Enter your email here" name="name" id="name">
-            <textarea maxlength="500" type="text" class="con-textArea" placeholder="Write your message here . . ." id="" cols="30" rows="5"></textarea>
-            <button class=" con-btn " >Submit</button>
+          <form
+            class="contact-form z-99 gap-form justify-start items-start flex-col"
+            action="submit"
+          >
+            <input
+              required
+              type="text"
+              placeholder="Enter your name here"
+              name="name"
+              id="name"
+            />
+            <input
+              required
+              type="email"
+              placeholder="Enter your email here"
+              name="name"
+              id="name"
+            />
+            <textarea
+              class="con-textArea"
+              placeholder="Write your message here . . ."
+              id=""
+              cols="30"
+              rows="5"
+            ></textarea>
+            <button class="con-btn">Submit</button>
           </form>
-
         </div>
         <div class="contact-form-shapes-mobile">
           <div class="rectangle-42"></div>
@@ -3306,16 +3430,25 @@ html {
               </div>
               <div class="langguage-list">
                 <div class="frame-9">
-                  <img class="ellipse-1" src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/javascript.svg" />
+                  <img
+                    class="ellipse-1"
+                    src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/javascript.svg"
+                  />
                   <div class="java-script3">JavaScript</div>
                 </div>
                 <div class="frame-10">
                   <div class="html3">HTML</div>
-                  <img class="ellipse-1" src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/html.svg" />
+                  <img
+                    class="ellipse-1"
+                    src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/html.svg"
+                  />
                 </div>
                 <div class="frame-11">
                   <div class="css3">CSS</div>
-                  <img class="ellipse-1" src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/css.svg" />
+                  <img
+                    class="ellipse-1"
+                    src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/css.svg"
+                  />
                 </div>
               </div>
             </div>
@@ -3363,8 +3496,6 @@ html {
             </div>
           </div>
         </div>
-
-        
       </div>
     </div>
 
@@ -3398,22 +3529,45 @@ html {
           />
         </svg>
 
-        <footer class="left-block flex justify-center item-center w-full ">
-          <div class=" flex-col gap-3 w-50 justify-center items-center p-3  " >
-            <header class="form-header w-full text-center " >
-              Contact me
-            </header>
-            <p class=" form-text text-center w-full " >
-              If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I'd love to have with it.
+        <footer class="left-block flex justify-center item-center w-full">
+          <div class="flex-col gap-3 w-50 justify-center items-center p-3">
+            <header class="form-header w-full text-center">Contact me</header>
+            <p class="form-text text-center w-full">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding, I'd
+              love to have with it.
             </p>
 
-            <form class=" contact-form z-99 gap-form  justify-center items-center flex-col  " action="https://formspree.io/f/mnqkoblj" method="POST">
-              <input required maxlength="30" type="text" placeholder="Enter your name here" name="name" id="name">
-              <input required  type="email" placeholder="Enter your email here" name="name" id="name">
-              <textarea maxlength="500" type="text"  class="con-textArea" placeholder="Write your message here . . ." id="" cols="50" rows="10"></textarea>
-              <button class=" con-btn " >Submit</button>
+            <form
+              class="contact-form z-99 gap-form justify-center items-center flex-col"
+              action="submit"
+            >
+              <input
+                required
+                maxlength="30"
+                type="text"
+                placeholder="Enter your name here"
+                name="name"
+                id="name"
+                value=""
+              />
+              <input
+                required
+                type="email"
+                placeholder="Enter your email here"
+                name="name"
+                id="name"
+              />
+              <textarea
+                maxlength="500"
+                class="con-textArea"
+                placeholder="Write your message here . . ."
+                id=""
+                cols="50"
+                rows="10"
+              ></textarea>
+              <button type="submit" class="con-btn">Submit</button>
             </form>
-
           </div>
         </footer>
         <div class="left-block2">
@@ -3427,7 +3581,9 @@ html {
             </div>
             <div class="social-media">
               <div class="supporting-text">
-                <button type="button" class="let-s-connect">LET’S CONNECT</button>
+                <button type="button" class="let-s-connect">
+                  LET’S CONNECT
+                </button>
               </div>
               <div class="frame-1">
                 <div class="normal-button-tertiary-disabled">
@@ -3528,7 +3684,7 @@ html {
                   <div class="icons-icon-twitter">
                     <div class="frame3">
                       <div class="frame4">
-                        <svg 
+                        <svg
                           class="group6"
                           width="20"
                           height="21"
@@ -3536,9 +3692,10 @@ html {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <path class='soc-icon'
+                          <path
+                            class="soc-icon"
                             d="M19.7663 1.36964C19.4329 0.970973 18.8663 0.871305 18.4329 1.17031L16.4996 2.49921C15.5996 1.53576 14.3329 1.0042 12.9663 1.0042C10.2663 1.0042 8.03295 3.19688 8.03295 5.92113C8.03295 6.3198 8.06628 6.68524 8.16628 7.05069C5.83295 6.55235 4.43295 4.85801 3.89961 1.80154C3.83295 1.40287 3.53295 1.10386 3.13295 1.0042C2.76628 0.904528 2.36628 1.07064 2.13295 1.36964C2.06628 1.43609 -3.43372 9.07726 4.53295 15.5557C3.76628 17.1836 1.46628 18.5789 0.56628 19.044C0.132947 19.2434 -0.0670531 19.7085 0.0329469 20.1736C0.132947 20.6387 0.532947 20.9377 0.999614 20.9377H2.73295C12.8663 20.9377 17.4663 15.9211 17.5663 4.69189L19.6663 2.69854C20.0663 2.36632 20.0996 1.76831 19.7663 1.36964Z"
-                            fill='#505f79'
+                            fill="#505f79"
                           />
                         </svg>
                       </div>
@@ -3563,7 +3720,7 @@ html {
               </div>
             </div>
           </div>
-          <div class="normal-button-secondary-enabled cursor-pointer btn-hover ">
+          <div class="normal-button-secondary-enabled cursor-pointer btn-hover">
             <div class="get-my-resume">Get my resume</div>
           </div>
         </div>
@@ -3573,7 +3730,7 @@ html {
               <div class="languages">Languages</div>
               <div class="normal-button-tertiary-disabled2">
                 <svg
-                  class="icons-icon-chevron-down-larger "
+                  class="icons-icon-chevron-down-larger"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -3581,7 +3738,7 @@ html {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                  class='soc-icon'
+                    class="soc-icon"
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z"
@@ -3592,15 +3749,24 @@ html {
             </div>
             <div class="langguage-list">
               <div class="frame-9">
-                <img class="ellipse-1" src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/javascript.svg" />
+                <img
+                  class="ellipse-1"
+                  src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/javascript.svg"
+                />
                 <div class="java-script">JavaScript</div>
               </div>
               <div class="frame-10">
-                <img class="ellipse-1" src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/html.svg" />
+                <img
+                  class="ellipse-1"
+                  src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/html.svg"
+                />
                 <div class="html">HTML</div>
               </div>
               <div class="frame-11">
-                <img class="ellipse-1" src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/css.svg" />
+                <img
+                  class="ellipse-1"
+                  src="https://raw.githubusercontent.com/lizzy-km/cloudy-km/e583992ac6e300e9dfb94d0c33c959d23084240a/css.svg"
+                />
                 <div class="css">CSS</div>
               </div>
             </div>
@@ -3698,7 +3864,6 @@ html {
         </svg>
       </div>
       <div class="list-portoflio">
-
         <div class="portoflio-card-enabled">
           <div class="container-basic3">
             <div class="container2"></div>
@@ -3741,9 +3906,11 @@ html {
               </div>
             </div>
           </div>
-          <div class='img' >
-                      <img class="snapshoot-portfolio" src="/images/snapshoot-portfolio.png" />
-
+          <div class="img">
+            <img
+              class="snapshoot-portfolio"
+              src="/images/snapshoot-portfolio.png"
+            />
           </div>
         </div>
 
@@ -3793,9 +3960,11 @@ html {
               </div>
             </div>
           </div>
-          <div class='img' >
-                      <img class="snapshoot-portfolio" src="/images/snapshoot-portfolio2.png" />
-
+          <div class="img">
+            <img
+              class="snapshoot-portfolio"
+              src="/images/snapshoot-portfolio2.png"
+            />
           </div>
         </div>
 
@@ -3845,9 +4014,11 @@ html {
               </div>
             </div>
           </div>
-          <div class='img' >
-                      <img class="snapshoot-portfolio" src="/images/Snapshoot Portfolio.png" />
-
+          <div class="img">
+            <img
+              class="snapshoot-portfolio"
+              src="/images/Snapshoot Portfolio.png"
+            />
           </div>
         </div>
 
@@ -3896,16 +4067,13 @@ html {
               </div>
             </div>
           </div>
-          <div class='img' >
-          <img class="snapshoot-portfolio" src="/images/Snapshoot Portfolio1.png" />
-
+          <div class="img">
+            <img
+              class="snapshoot-portfolio"
+              src="/images/Snapshoot Portfolio1.png"
+            />
           </div>
         </div>
-
-        
-        
-
-        
       </div>
       <div class="frame-13">
         <svg
@@ -3924,9 +4092,7 @@ html {
 
         <div class="header">
           <div class="text5">
-            <div class="primary-text10">
-              I’m Vince.<br />Glad to see you!
-            </div>
+            <div class="primary-text10">I’m Vince.<br />Glad to see you!</div>
             <div class="social-media">
               <div class="supporting-text">
                 <div class="let-s-connect">LET’S CONNECT</div>
@@ -4098,27 +4264,32 @@ html {
       </div>
       <div class="top-naviagation">
         <div class="logo-placeholder cursor-pointer">
-          <div class="my-logo">My Logo</div>
+          <div class="my-logo">
+            <div class="logo-text">M</div>
+            <pre class="logo-text">y </pre>
+            <div class="logo-text">L</div>
+            <div class="logo-text">o</div>
+            <div class="logo-text">g</div>
+            <div class="logo-text">o</div>
+          </div>
         </div>
         <div class="item-navigation">
-
-          <div class=" nav-item port cursor-pointer ">
-          <div class='port-b' >
-            <div class="portfolio-b">Portfolio</div>
+          <div class="nav-item port cursor-pointer">
+            <div class="port-b">
+              <div class="portfolio-b">Portfolio</div>
+            </div>
+            <div class="portfolio">Portfolio</div>
           </div>
-          <div class="portfolio">Portfolio</div>
-            
-          </div>
-          <div class=" nav-item abu cursor-pointer">
-          <div class='port-b' >
-            <div class="portfolio-b">About</div>
-          </div>
+          <div class="nav-item abu cursor-pointer">
+            <div class="port-b">
+              <div class="portfolio-b">About</div>
+            </div>
             <div class="about">About</div>
           </div>
-          <div class=" nav-item cot cursor-pointer">
-          <div class='port-b' >
-            <div class="portfolio-b">Contact</div>
-          </div>
+          <div class="nav-item cot cursor-pointer">
+            <div class="port-b">
+              <div class="portfolio-b">Contact</div>
+            </div>
             <div class="contact">Contact</div>
           </div>
         </div>
